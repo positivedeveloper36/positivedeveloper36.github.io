@@ -1,5 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/mosb6374/vuejs
-    - /bin/cp -R dist $DEPLOYPATH
+    - export DEPLOYPATH=/home/mosb6374/public_html/vuejs
+    - /bin/cp dist/index.html $DEPLOYPATH
+    - /bin/cp dist/favicon.ico $DEPLOYPATH
+    - /bin/cp -R dist/assets $DEPLOYPATH
